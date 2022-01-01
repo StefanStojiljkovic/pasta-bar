@@ -66,7 +66,28 @@ public class NarucivanjePaste {
 					System.out.println();
 				}
 			}
-			
 		}
+		}
+
+		public static int findIngredient(String[] ingredients, String ingredientName) {
+
+			for (int i = 0; i < ingredients.length; i++) {
+				if (ingredients[i].equals(ingredientName)) {
+					return i;
+				}
+			}
+			return 0;
+		}
+
+		public static boolean isRegularCustomer(String[] phoneNumbers, String phone) {
+
+			for (int i = 0; i < phoneNumbers.length; i++) {
+				if (phoneNumbers[i].equals(phone)) {
+					return true;
+				}
+			}
+
+			return false;
+		}
+
 	}
-}
